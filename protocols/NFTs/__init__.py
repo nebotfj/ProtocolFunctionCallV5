@@ -1,0 +1,19 @@
+"""NFT Marketplaces Package"""
+
+from .opensea import OPENSEA_FUNCTIONS
+from .blur import BLUR_FUNCTIONS
+from .x2y2 import X2Y2_FUNCTIONS
+from .looksrare import LOOKSRARE_FUNCTIONS
+from .rarible import RARIBLE_FUNCTIONS
+from .nftx import NFTX_FUNCTIONS
+from .sudoswap import SUDOSWAP_FUNCTIONS
+
+NFT_PROTOCOLS = {
+    'OPENSEA': OPENSEA_FUNCTIONS,
+    'BLUR': BLUR_FUNCTIONS,
+    'X2Y2': X2Y2_FUNCTIONS,
+    'LOOKSRARE': LOOKSRARE_FUNCTIONS,
+    'RARIBLE': RARIBLE_FUNCTIONS,
+    'NFTX': NFTX_FUNCTIONS,
+    'SUDOSWAP': SUDOSWAP_FUNCTIONS
+}

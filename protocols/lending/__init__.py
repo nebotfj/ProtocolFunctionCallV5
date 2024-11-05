@@ -1,0 +1,27 @@
+"""Lending Protocols Package"""
+
+from .aave import AAVE_FUNCTIONS
+from .compound import COMPOUND_FUNCTIONS
+from .euler import EULER_FUNCTIONS
+from .benqi import BENQI_FUNCTIONS
+from .venus import VENUS_FUNCTIONS
+from .cream import CREAM_FUNCTIONS
+from .iron_bank import IRON_BANK_FUNCTIONS
+from .maple import MAPLE_FUNCTIONS
+from .morpho import MORPHO_FUNCTIONS
+from .granary import GRANARY_FUNCTIONS
+from .radiant import RADIANT_FUNCTIONS
+
+LENDING_PROTOCOLS = {
+    'AAVE': AAVE_FUNCTIONS,
+    'COMPOUND': COMPOUND_FUNCTIONS,
+    'EULER': EULER_FUNCTIONS,
+    'BENQI': BENQI_FUNCTIONS,
+    'VENUS': VENUS_FUNCTIONS,
+    'CREAM': CREAM_FUNCTIONS,
+    'IRON_BANK': IRON_BANK_FUNCTIONS,
+    'MAPLE': MAPLE_FUNCTIONS,
+    'MORPHO': MORPHO_FUNCTIONS,
+    'GRANARY': GRANARY_FUNCTIONS,
+    'RADIANT': RADIANT_FUNCTIONS
+}

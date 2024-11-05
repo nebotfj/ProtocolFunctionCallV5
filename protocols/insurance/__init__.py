@@ -1,0 +1,11 @@
+"""Insurance Protocols Package"""
+
+from .nexus_mutual import NEXUS_MUTUAL_FUNCTIONS
+from .insurace import INSURACE_FUNCTIONS
+from .unslashed import UNSLASHED_FUNCTIONS
+
+INSURANCE_PROTOCOLS = {
+    'NEXUS_MUTUAL': NEXUS_MUTUAL_FUNCTIONS,
+    'INSURACE': INSURACE_FUNCTIONS,
+    'UNSLASHED': UNSLASHED_FUNCTIONS
+}

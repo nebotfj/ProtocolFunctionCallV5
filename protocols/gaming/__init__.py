@@ -1,0 +1,35 @@
+"""Gaming Protocols Package"""
+
+from .decentral_games import DECENTRAL_GAMES_FUNCTIONS
+from .rollbit import ROLLBIT_FUNCTIONS
+from .betswirl import BETSWIRL_FUNCTIONS
+from .polymarket import POLYMARKET_FUNCTIONS
+from .wallfair import WALLFAIR_FUNCTIONS
+from .illuvium import ILLUVIUM_FUNCTIONS
+from .axie import AXIE_FUNCTIONS
+from .gods_unchained import GODS_UNCHAINED_FUNCTIONS
+from .sorare import SORARE_FUNCTIONS
+from .zed_run import ZED_RUN_FUNCTIONS
+from .pegaxy import PEGAXY_FUNCTIONS
+from .stepn import STEPN_FUNCTIONS
+from .thetan_arena import THETAN_ARENA_FUNCTIONS
+from .gambling.stake import STAKE_FUNCTIONS
+from .gambling.bc_game import BC_GAME_FUNCTIONS
+
+GAMING_PROTOCOLS = {
+    'DECENTRAL_GAMES': DECENTRAL_GAMES_FUNCTIONS,
+    'ROLLBIT': ROLLBIT_FUNCTIONS,
+    'BETSWIRL': BETSWIRL_FUNCTIONS,
+    'POLYMARKET': POLYMARKET_FUNCTIONS,
+    'WALLFAIR': WALLFAIR_FUNCTIONS,
+    'ILLUVIUM': ILLUVIUM_FUNCTIONS,
+    'AXIE': AXIE_FUNCTIONS,
+    'GODS_UNCHAINED': GODS_UNCHAINED_FUNCTIONS,
+    'SORARE': SORARE_FUNCTIONS,
+    'ZED_RUN': ZED_RUN_FUNCTIONS,
+    'PEGAXY': PEGAXY_FUNCTIONS,
+    'STEPN': STEPN_FUNCTIONS,
+    'THETAN_ARENA': THETAN_ARENA_FUNCTIONS,
+    'STAKE': STAKE_FUNCTIONS,
+    'BC_GAME': BC_GAME_FUNCTIONS
+}
