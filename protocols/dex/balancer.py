@@ -30,8 +30,34 @@ BALANCER_V2_FUNCTIONS = {
     'STABLE_POOL': {
         'createStablePool': 'OUTGOING',
         'setAmplificationParameter': 'OUTGOING'
+    },
+
+    'TRADING': {
+        'swap': 'BOTH',
+        'batchSwap': 'BOTH',
+        'flashSwap': 'BOTH',
+        'querySwap': 'NEUTRAL'
+    },
+    'LIQUIDITY': {
+        'joinPool': 'OUTGOING',
+        'exitPool': 'INCOMING',
+        'manageUserBalance': 'BOTH',
+        'managePoolBalance': 'BOTH'
+        'provideLiquidity': 'OUTGOING',
+        'removeLiquidity': 'INCOMING',
+        'createPool': 'OUTGOING',
+        'setSwapFee': 'OUTGOING'
+    },
+
+    
+    'BOOSTED_POOL': {
+        'createBoostedPool': 'OUTGOING',
+        'setBoostedPoolParameters': 'OUTGOING'
     }
 }
+
+
+
 
 # Combined functions for all versions
 BALANCER_FUNCTIONS = {
