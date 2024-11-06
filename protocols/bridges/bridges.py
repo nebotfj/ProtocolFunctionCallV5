@@ -1,4 +1,4 @@
-"""Cross-chain Bridge Functions"""
+"""Extended Bridge Protocol Functions"""
 
 BRIDGE_FUNCTIONS = {
     'ARBITRUM': {
@@ -19,5 +19,23 @@ BRIDGE_FUNCTIONS = {
         'exit': 'INCOMING',
         'withdraw': 'INCOMING',
         'depositEtherFor': 'OUTGOING'
+    },
+    'WORMHOLE': {
+        'transferTokens': 'OUTGOING',
+        'completeTransfer': 'INCOMING',
+        'attestToken': 'OUTGOING',
+        'createWrapped': 'OUTGOING'
+    },
+    'STARGATE': {
+        'swap': 'BOTH',
+        'addLiquidity': 'OUTGOING',
+        'removeLiquidity': 'INCOMING',
+        'instantRedeemLocal': 'INCOMING'
+    },
+    'LAYERZERO': {
+        'send': 'OUTGOING',
+        'receive': 'INCOMING',
+        'estimateFees': 'NEUTRAL',
+        'validateTransactionProof': 'NEUTRAL'
     }
 }

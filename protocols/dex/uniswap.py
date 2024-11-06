@@ -7,19 +7,32 @@ UNISWAP_V2_FUNCTIONS = {
         'swapExactETHForTokens': 'OUTGOING',
         'swapTokensForExactETH': 'BOTH',
         'swapExactTokensForETH': 'BOTH',
-        'swapETHForExactTokens': 'OUTGOING'
+        'swapETHForExactTokens': 'OUTGOING',
     },
+
+        
+    'POSITION': {
+        'mint': 'OUTGOING',
+        'burn': 'INCOMING',
+        'collect': 'INCOMING',
+        'flash': 'BOTH',
+        'initialize': 'OUTGOING',
+        'increaseObservationCardinalityNext': 'OUTGOING',
+    }, 
+        
+   
     'LIQUIDITY': {
         'addLiquidity': 'OUTGOING',
         'removeLiquidity': 'INCOMING',
         'addLiquidityETH': 'OUTGOING',
         'removeLiquidityETH': 'INCOMING',
         'removeLiquidityWithPermit': 'INCOMING',
-        'removeLiquidityETHWithPermit': 'INCOMING'
+        'removeLiquidityETHWithPermit': 'INCOMING',
     },
+
     'FLASH': {
         'flash': 'BOTH'
-    }
+    },
 }
 
 UNISWAP_V3_FUNCTIONS = {
